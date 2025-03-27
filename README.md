@@ -1,2 +1,0 @@
-# Grafika-Komputerowa
-Grafika Komputerowa
