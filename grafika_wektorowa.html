@@ -6,117 +6,93 @@
     <link rel="stylesheet" href="Style.css">
     <title>Grafika wektorowa</title>
     <style>
-    body {
-        font-family: Arial, Helvetica, sans-serif   ;
-        background-color: white; 
-        margin: 0; 
-        padding: 0; 
-        height: 100vh; 
-        display: flex;
-        flex-direction: column;
-        height: 300%;
-    overflow-y:scroll;
-    }
-    
-    #header {
-        position: sticky;
-        top: 0;
-        background-color: lightblue; 
-        padding: 10px; 
-        text-align: center; 
-    }
-    
-    header h2 {
-        display: inline-block; 
-        margin: 0 10px; 
-    }
-    
-    header h2 a {
-        text-decoration: none; 
-        color: inherit; 
-    }
-    
-    header h2:hover a {
-        color: black; 
-        text-decoration: underline; 
-    }
-    
-    header h2:hover {
-        transition: color 0.3s ease-in-out; 
-        color: black; 
-        cursor: pointer; 
-    }
-    
-    .description {
-        text-align: center; 
-        padding: 20px; 
-        margin-top: 20px; 
-        overflow: hidden; 
-        flex: 1; 
-        
-    
-    }
-    
-    .li {
-    
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
-    
-    
-    
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    .description img {
-        width:50%;
-        max-width: 50%; 
-        height: auto; 
-        margin-bottom: 20px; 
-        float: center; 
-        margin-right: 10px; 
-        
-    }
-    
-    .description .text-opis {
-        border: 2px solid black; 
-        border-radius: 10px; 
-        padding: 20px; 
-        text-align: left; 
-        display: inline-block; 
-        width: 100%;
-        box-sizing: border-box; 
-        background-color: lightskyblue; 
-    
-    }
-    
-    .description p {
-        font-size: 1em; 
-    }
-    
-    footer {
-        background-color: lightblue; 
-        text-align: center; 
-        padding: 0px; 
-        width: 100%; 
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    font-size: 15px;
-     
-    }
-</style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        #header {
+            position: sticky;
+            top: 0;
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h2 {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        header h2 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header h2:hover a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        header h2:hover {
+            transition: color 0.3s ease-in-out;
+            color: black;
+            cursor: pointer;
+        }
+
+        .description {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            flex: 1;
+        }
+
+        .description .text-opis {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: lightskyblue;
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description span {
+            display: block;
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+
+        .description img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            font-size: 15px;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
@@ -133,52 +109,36 @@
     <div class="description">
         <div class="text-opis">
             <p>Co to jest grafika wektorowa?</p>
-            <p>Grafika wektorowa to typ grafiki komputerowej, który opiera się na matematycznych formułach do tworzenia
-                kształtów, linii i kolorów. Obrazy wektorowe składają się z punktów, linii i krzywych, co pozwala na ich
-                dowolne skalowanie bez utraty jakości. Dzięki temu idealnie nadają się do projektowania logo, ikon,
-                ilustracji czy infografik. W odróżnieniu od grafiki rastrowej, wektorowa nie traci ostrości przy
-                powiększaniu, co czyni ją bardziej uniwersalną do pracy w różnych rozmiarach.
-            </p>
-            
-<img src="Wektorowa2.jpeg" alt="Przyklad" width="30" height="30">
-        </div>
-       
-        <div class="description">
-            <div class="text-opis">
-                <p>Zalety grafiki wektorowej:</p>
-                <li>Skalowalność – obrazy wektorowe można powiększać lub zmniejszać bez utraty jakości.</li>
-                <li>Mała waga pliku – grafika wektorowa zajmuje mniej miejsca niż grafika rastrowa o podobnej jakości.
-                </li>
-                <li>Precyzyjność – łatwo uzyskać dokładne, czyste linie i kształty.</li>
-                <li>Edytowalność – łatwo modyfikować poszczególne elementy obrazu, jak zmiana koloru, kształtu czy
-                    rozmiaru.</li>
-                <li> Idealna do druku – dzięki wysokiej rozdzielczości przy skalowaniu, grafika wektorowa świetnie
-                    nadaje się do druku w dużych formatach, np. na plakatach czy banerach.
-
-                </li>
-              
-
+            <span>Grafika wektorowa to typ grafiki komputerowej, który opiera się na matematycznych formułach do tworzenia kształtów, linii i kolorów. Obrazy wektorowe składają się z punktów, linii i krzywych, co pozwala na ich dowolne skalowanie bez utraty jakości. Dzięki temu idealnie nadają się do projektowania logo, ikon, ilustracji czy infografik.</span>
+            <div>
+                <img src="grafika_wektorowa_przyklad1.jpeg" alt="Przykład grafiki wektorowej">
             </div>
-            
-            <div class="description">
-                <div class="text-opis">
-                    <p>Wady grafiki wektorowej:</p>
-                    <li>Ograniczenia w szczegółach – trudniej jest odwzorować skomplikowane obrazy, takie jak zdjęcia,
-                        które mają wiele detali i przejść tonalnych.</li>
-                    <li>Trudność w tworzeniu realistycznych efektów – wektorowa grafika nie jest idealna do symulowania
-                        tekstur czy cieni, co może ograniczać realizm obrazów.</li>
-                    <li>Wymaga precyzyjnego projektowania – dla uzyskania wysokiej jakości efektów konieczna jest
-                        dokładność, co może być czasochłonne.</li>
-                    <li>Mniej naturalna w przypadku rysunków ręcznych – wektorowa grafika może sprawiać, że rysunki
-                        wyglądają sztucznie, w porównaniu do bardziej swobodnych rysunków rastrowych.</li>
-
-                       </div>
-                <img src="wektorowa8.png" alt="Przyklad" width="30" height="30">
-
-                       <img src="Grafika wektorowa4.avif" alt="Opis grafiki komputerowej">
-                    <footer>
-                        <p>By Hubert Banasiewicz</p>
-                    </footer>
+        </div>
+        <div class="text-opis">
+            <p>Zalety grafiki wektorowej:</p>
+            <span>Skalowalność – obrazy wektorowe można powiększać lub zmniejszać bez utraty jakości.</span>
+            <span>Mała waga pliku – grafika wektorowa zajmuje mniej miejsca niż grafika rastrowa o podobnej jakości.</span>
+            <span>Precyzyjność – łatwo uzyskać dokładne, czyste linie i kształty.</span>
+            <span>Edytowalność – łatwo modyfikować poszczególne elementy obrazu, jak zmiana koloru, kształtu czy rozmiaru.</span>
+            <span>Idealna do druku – dzięki wysokiej rozdzielczości przy skalowaniu, grafika wektorowa świetnie nadaje się do druku w dużych formatach, np. na plakatach czy banerach.</span>
+            <div>
+                <img src="grafika_wektorowa_zalety.jpeg" alt="Przykład zalet grafiki wektorowej">
+            </div>
+        </div>
+        <div class="text-opis">
+            <p>Wady grafiki wektorowej:</p>
+            <span>Ograniczenia w szczegółach – trudniej jest odwzorować skomplikowane obrazy, takie jak zdjęcia, które mają wiele detali i przejść tonalnych.</span>
+            <span>Trudność w tworzeniu realistycznych efektów – wektorowa grafika nie jest idealna do symulowania tekstur czy cieni, co może ograniczać realizm obrazów.</span>
+            <span>Wymaga precyzyjnego projektowania – dla uzyskania wysokiej jakości efektów konieczna jest dokładność, co może być czasochłonne.</span>
+            <span>Mniej naturalna w przypadku rysunków ręcznych – wektorowa grafika może sprawiać, że rysunki wyglądają sztucznie, w porównaniu do bardziej swobodnych rysunków rastrowych.</span>
+            <div>
+                <img src="grafika_wektorowa_wady.jpeg" alt="Przykład wad grafiki wektorowej">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>By Hubert Banasiewicz</p>
+    </footer>
 </body>
 
 </html>
