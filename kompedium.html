@@ -6,117 +6,88 @@
     <link rel="stylesheet" href="Style.css">
     <title>Kompedium</title>
     <style>
-    body {
-        font-family: Arial, Helvetica, sans-serif   ;
-        background-color: white; 
-        margin: 0; 
-        padding: 0; 
-        height: 100vh; 
-        display: flex;
-        flex-direction: column;
-        height: 300%;
-    overflow-y:scroll;
-    }
-    
-    #header {
-        position: sticky;
-        top: 0;
-        background-color: lightblue; 
-        padding: 10px; 
-        text-align: center; 
-    }
-    
-    header h2 {
-        display: inline-block; 
-        margin: 0 10px; 
-    }
-    
-    header h2 a {
-        text-decoration: none; 
-        color: inherit; 
-    }
-    
-    header h2:hover a {
-        color: black; 
-        text-decoration: underline; 
-    }
-    
-    header h2:hover {
-        transition: color 0.3s ease-in-out; 
-        color: black; 
-        cursor: pointer; 
-    }
-    
-    .description {
-        text-align: center; 
-        padding: 20px; 
-        margin-top: 20px; 
-        overflow: hidden; 
-        flex: 1; 
-        
-    
-    }
-    
-    .li {
-    
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
-    
-    
-    
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    .description img {
-        width:50%;
-        max-width: 50%; 
-        height: auto; 
-        margin-bottom: 20px; 
-        float: center; 
-        margin-right: 10px; 
-        
-    }
-    
-    .description .text-opis {
-        border: 2px solid black; 
-        border-radius: 10px; 
-        padding: 20px; 
-        text-align: left; 
-        display: inline-block; 
-        width: 100%;
-        box-sizing: border-box; 
-        background-color: lightskyblue; 
-    
-    }
-    
-    .description p {
-        font-size: 1em; 
-    }
-    
-    footer {
-        background-color: lightblue; 
-        text-align: center; 
-        padding: 0px; 
-        width: 100%; 
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    font-size: 15px;
-     
-    }
-</style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+        }
+
+        #header {
+            position: sticky;
+            top: 0;
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h2 {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        header h2 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header h2:hover a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        header h2:hover {
+            transition: color 0.3s ease-in-out;
+            color: black;
+            cursor: pointer;
+        }
+
+        .description {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .description .text-opis {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: lightskyblue;
+        }
+
+        .description p {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description span {
+            display: block;
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            font-size: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -132,93 +103,31 @@
     </header>
     <div class="description">
         <div class="text-opis">
-
             <p>Palety kolorów:</p>
-            
-            <li> RGB (Red, Green, Blue): </li>
-            <br>
-            <li>Każdy składnik ma wartość od 0 do 255 (np. biały to RGB(255, 255, 255), a czarny to RGB(0, 0, 0)).</li>
-            <br>
-            <li>CMYK (Cyan, Magenta, Yellow, Key/Black):</li>
-            <br>
-            <li>Kolory są tworzone przez nakładanie barw na papier (np. czarny to CMYK(0, 0, 0, 100)).</li>
-            <li>Jest odwrotnością RGB – im więcej barwnika, tym ciemniejszy kolor.</li>
-            <br>
-            <li>HEX (Hexadecimal):</li>
-            <br>
-            <li>Wykorzystywany w stronach internetowych i CSS.</li>
-            <li>Reprezentacja kolorów w postaci szesnastkowej, np. czarny to #000000, biały #FFFFFF, czerwony #FF0000.</li>
-
-            <img src="rgb.jpeg" alt="Przyklad" width="30" height="30">
-
-
-
-
+            <span><b>RGB (Red, Green, Blue):</b> Każdy składnik ma wartość od 0 do 255 (np. biały to RGB(255, 255, 255), a czarny to RGB(0, 0, 0)).</span>
+            <span><b>CMYK (Cyan, Magenta, Yellow, Key/Black):</b> Kolory są tworzone przez nakładanie barw na papier (np. czarny to CMYK(0, 0, 0, 100)).</span>
+            <span><b>HEX (Hexadecimal):</b> Reprezentacja kolorów w postaci szesnastkowej, np. czarny to #000000, biały #FFFFFF, czerwony #FF0000.</span>
         </div>
-
-       <div class="description">
-            <div class="text-opis">
-
-                    <p>Rozdzielczości:</p>
-                <li>2K	2048×1152 (16:9)</li>
-                 <li>   2K	2048×1024 (2:1) </li>
-               <li>     3K	3072×1728 (16:9)</li>
-           <li>    3K	3072×1536 (2:1) </li>
-                <li>    4K	4096×2304 (16:9) </li>
-                  <li>  4K	4096×2048 (2:1) </li>
-                 <li>   8K	8192×4608 (16:9) </li>
-                  <li>  8K	8192×4096 (2:1) </li>
-                  <li>  16K	16384x9216(16:9) </li>
-                  <li>  16K	16384x8192 (2:1) </li>
-
-
-
-
-
-
-                </div>
-
-            <div class="description">
-            <div class="text-opis">
-             <p>Głębia kolorów:</p>
-
-            <li>liczba bitów użytych do reprezentacji koloru danego piksela w określonym modelu przestrzeni barw (zwykle RGB). Im jest ona wyższa, tym większa jest rozdzielczość tonalna kolorów możliwych do uzyskania przy przetwarzaniu danych graficznych lub generowaniu obrazów na wyświetlaczu.</li>
-
-                <li>Głębię koloru wyraża się w jednostce bpp (od ang. bits per pixel, czyli bitów na piksel).</li>
-            
-
-
-
-
-            </div>
-
-
-                <div class="description">
-            <div class="text-opis">
+        <div class="text-opis">
+            <p>Rozdzielczości:</p>
+            <span>2K: 2048×1152 (16:9), 2048×1024 (2:1)</span>
+            <span>3K: 3072×1728 (16:9), 3072×1536 (2:1)</span>
+            <span>4K: 4096×2304 (16:9), 4096×2048 (2:1)</span>
+            <span>8K: 8192×4608 (16:9), 8192×4096 (2:1)</span>
+            <span>16K: 16384×9216 (16:9), 16384×8192 (2:1)</span>
+        </div>
+        <div class="text-opis">
             <p>Proporcje ekranu:</p>
-
-                <li>  Wymiary wyświetlanego obrazu wyrażone ilorazem jego długości do wysokości (zazwyczaj przedstawione jako x:y lub x×y, przy czym symbol oddzielający wartości, dwukropek lub znak mnożenia, czytane są jako na). Na przykład:</li>
-               <li>16:9</li>  
-                <li>4:3</li>
-
-            </div>
-
-
-
-                    <div class="description">
-            <div class="text-opis">
-            <p>Kompresja:</p>   
-
-                <li>Zmiana sposobu zapisu informacji w celu zmniejszenia redundancji i tym samym objętości zbioru. Innymi słowy chodzi o wyrażenie tego samego zestawu informacji, lecz za pomocą mniejszej liczby bitów.</li>
-                <li>Działaniem przeciwnym do kompresji jest dekompresja.</li>
-
-
-            </div>
-
-
-        <footer>
-            <p>By Hubert Banasiewicz</p>
-        </footer>
+            <span><b>4:3:</b> Standardowe monitory i telewizory (np. 1024x768).</span>
+            <span><b>16:9:</b> Współczesne monitory i telewizory (np. 1920x1080, 3840x2160).</span>
+            <span><b>16:10:</b> Popularne w monitorach komputerowych (np. 1920x1200).</span>
+            <span><b>21:9:</b> Ultra szerokie monitory (np. 2560x1080, 3440x1440).</span>
+            <span><b>32:9:</b> Super ultra szerokie monitory (np. 5120x1440).</span>
+        </div>
+    </div>
+    <footer>
+        <p>By Hubert Banasiewicz</p>
+    </footer>
 </body>
 
 </html>
