@@ -11,10 +11,10 @@
             background-color: white;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh; /* Zmieniono z height na min-height */
             display: flex;
             flex-direction: column;
-            overflow-y: scroll;
+            overflow-y: auto; /* Umożliwia przewijanie */
         }
 
         #header {
@@ -63,6 +63,7 @@
             width: 100%;
             box-sizing: border-box;
             background-color: lightskyblue;
+            margin-bottom: 20px;
         }
 
         .description p {
@@ -77,14 +78,18 @@
             margin-bottom: 5px;
         }
 
+        .description img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
         footer {
             background-color: lightblue;
             text-align: center;
             padding: 10px;
             width: 100%;
-            position: fixed;
-            bottom: 0;
-            left: 0;
             font-size: 15px;
         }
     </style>
@@ -102,30 +107,32 @@
         </div>
     </header>
     <div class="description">
-    <div class="text-opis">
-        <p>Palety kolorów:</p>
-        <span><b>RGB (Red, Green, Blue):</b> Każdy składnik ma wartość od 0 do 255 (np. biały to RGB(255, 255, 255), a czarny to RGB(0, 0, 0)).</span>
-        <img src="rgb_example.png" alt="Przykład palety RGB" style="width: 100%; max-width: 400px; margin: 10px 0;">
-        <span><b>CMYK (Cyan, Magenta, Yellow, Key/Black):</b> Kolory są tworzone przez nakładanie barw na papier (np. czarny to CMYK(0, 0, 0, 100)).</span>
-        <img src="cmyk_example.png" alt="Przykład palety CMYK" style="width: 100%; max-width: 400px; margin: 10px 0;">
-        <span><b>HEX (Hexadecimal):</b> Reprezentacja kolorów w postaci szesnastkowej, np. czarny to #000000, biały #FFFFFF, czerwony #FF0000.</span>
-        <img src="hex_example.png" alt="Przykład palety HEX" style="width: 100%; max-width: 400px; margin: 10px 0;">
+        <div class="text-opis">
+            <p>Palety kolorów:</p>
+            <span><b>RGB (Red, Green, Blue):</b> Każdy składnik ma wartość od 0 do 255 (np. biały to RGB(255, 255, 255), a czarny to RGB(0, 0, 0)).</span>
+            <img src="images/rgb_example.png" alt="Przykład palety RGB">
+            <span><b>CMYK (Cyan, Magenta, Yellow, Key/Black):</b> Kolory są tworzone przez nakładanie barw na papier (np. czarny to CMYK(0, 0, 0, 100)).</span>
+            <img src="images/cmyk_example.png" alt="Przykład palety CMYK">
+            <span><b>HEX (Hexadecimal):</b> Reprezentacja kolorów w postaci szesnastkowej, np. czarny to #000000, biały #FFFFFF, czerwony #FF0000.</span>
+            <img src="images/hex_example.png" alt="Przykład palety HEX">
+        </div>
+        <div class="text-opis">
+            <p>Rozdzielczości:</p>
+            <span>2K: 2048×1152 (16:9), 2048×1024 (2:1)</span>
+            <img src="images/2k_example.webp" alt="Przykład rozdzielczości 2K">
+            <span>4K: 4096×2304 (16:9), 4096×2048 (2:1)</span>
+            <img src="images/4k_example.jpeg" alt="Przykład rozdzielczości 4K">
+            
+        </div>
+        <div class="text-opis">
+            <p>Proporcje ekranu:</p>
+            
+            <span><b>16:9:</b> Współczesne monitory i telewizory (np. 1920x1080, 3840x2160).</span>
+            <img src="images/16_9_example.png" alt="Przykład proporcji 16:9">
+            <span><b>21:9:</b> Ultra szerokie monitory (np. 2560x1080, 3440x1440).</span>
+            <img src="images/21_9_example.jpeg" alt="Przykład proporcji 21:9">
+        </div>
     </div>
-    <div class="text-opis">
-        <p>Rozdzielczości:</p>
-        <span>2K: 2048×1152 (16:9), 2048×1024 (2:1)</span>
-        <img src="2k_example.webp" alt="Przykład rozdzielczości 2K" style="width: 100%; max-width: 400px; margin: 10px 0;">
-        <span>4K: 4096×2304 (16:9), 4096×2048 (2:1)</span>
-        <img src="4k_example.jpeg" alt="Przykład rozdzielczości 4K" style="width: 100%; max-width: 400px; margin: 10px 0;">
-    </div>
-    <div class="text-opis">
-        <p>Proporcje ekranu:</p>
-        <span><b>16:9:</b> Współczesne monitory i telewizory (np. 1920x1080, 3840x2160).</span>
-        <img src="16_9_example.png" alt="Przykład proporcji 16:9" style="width: 100%; max-width: 400px; margin: 10px 0;">
-        <span><b>21:9:</b> Ultra szerokie monitory (np. 2560x1080, 3440x1440).</span>
-        <img src="21_9_example.jpeg" alt="Przykład proporcji 21:9" style="width: 100%; max-width: 400px; margin: 10px 0;">
-    </div>
-</div>
     <footer>
         <p>By Hubert Banasiewicz</p>
     </footer>
