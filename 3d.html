@@ -6,117 +6,93 @@
     <link rel="stylesheet" href="Style.css">
     <title>Grafika 3D</title>
     <style>
-    body {
-        font-family: Arial, Helvetica, sans-serif   ;
-        background-color: white; 
-        margin: 0; 
-        padding: 0; 
-        height: 100vh; 
-        display: flex;
-        flex-direction: column;
-        height: 200%;
-    overflow-y:scroll;
-    }
-    
-    #header {
-        position: sticky;
-        top: 0;
-        background-color: lightblue; 
-        padding: 10px; 
-        text-align: center; 
-    }
-    
-    header h2 {
-        display: inline-block; 
-        margin: 0 10px; 
-    }
-    
-    header h2 a {
-        text-decoration: none; 
-        color: inherit; 
-    }
-    
-    header h2:hover a {
-        color: black; 
-        text-decoration: underline; 
-    }
-    
-    header h2:hover {
-        transition: color 0.3s ease-in-out; 
-        color: black; 
-        cursor: pointer; 
-    }
-    
-    .description {
-        text-align: center; 
-        padding: 20px; 
-        margin-top: 20px; 
-        overflow: hidden; 
-        flex: 1; 
-        
-    
-    }
-    
-    .li {
-    
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    
-    
-    
-    
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    .description img {
-        width:50%;
-        max-width: 50%; 
-        height: auto; 
-        margin-bottom: 20px; 
-        float: center; 
-        margin-right: 10px; 
-        
-    }
-    
-    .description .text-opis {
-        border: 2px solid black; 
-        border-radius: 10px; 
-        padding: 20px; 
-        text-align: left; 
-        display: inline-block; 
-        width: 100%;
-        box-sizing: border-box; 
-        background-color: lightskyblue; 
-    
-    }
-    
-    .description p {
-        font-size: 1em; 
-    }
-    
-    footer {
-        background-color: lightblue; 
-        text-align: center; 
-        padding: 0px; 
-        width: 100%; 
-        position: fixed;
-        bottom: 0;
-        left: 0;
-    font-size: 15px;
-     
-    }
-</style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        #header {
+            position: sticky;
+            top: 0;
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header h2 {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        header h2 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header h2:hover a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        header h2:hover {
+            transition: color 0.3s ease-in-out;
+            color: black;
+            cursor: pointer;
+        }
+
+        .description {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            flex: 1;
+        }
+
+        .description .text-opis {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: lightskyblue;
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .description span {
+            display: block;
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+
+        .description img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            font-size: 15px;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
@@ -132,47 +108,46 @@
     </header>
     <div class="description">
         <div class="text-opis">
-            <p>Co to grafika 3D?</p>
-            <p>Grafika 3D to tworzenie trójwymiarowych obrazów, modeli lub animacji, które mają głębokość, szerokość i
-                wysokość. Używa się jej w filmach, grach, projektowaniu produktów i architekturze, pozwalając na
-                uzyskanie realistycznych efektów i głębi w obrazie.</p>
-
-    <img src="3D.jpeg" alt="Przyklad" width="30" height="30">
-            
+            <p>Co to jest grafika 3D?</p>
+            <span>Grafika 3D to tworzenie trójwymiarowych obrazów, modeli lub animacji, które mają głębokość, szerokość i wysokość. Używa się jej w filmach, grach, projektowaniu produktów i architekturze, pozwalając na uzyskanie realistycznych efektów i głębi w obrazie.</span>
+            <div>
+                <img src="grafika_3d_przyklad1.jpeg" alt="Przykład grafiki 3D">
+            </div>
         </div>
-    
-
-
-        <div class="description">
-            <div class="text-opis">
-                <p>Zalety grafiki 3D:</p>
-                
-                <li>Realizm – umożliwia tworzenie szczegółowych i realistycznych obrazów.</li>
-                <li>Interaktywność – w grach i aplikacjach VR pozwala na pełną interakcję.</li>
-                <li>Wielofunkcyjność – znajduje zastosowanie w filmach, grach, medycynie, architekturze czy projektowaniu.</li>
-                <li>Animacja – łatwiejsze tworzenie płynnych i realistycznych animacji.</li>
-                <li>Wizualizacja danych – pomocna w przedstawianiu skomplikowanych danych.</li>
-              
-                
-
-
-                </div>
-               
-                <div class="description">
-                    <div class="text-opis">
-                        <p>Wady grafiki 3D:</p>
-                        <li>Wysokie wymagania sprzętowe – tworzenie i renderowanie grafiki 3D wymaga mocnych komputerów, co może być kosztowne.</li>
-                        <li>Czasochłonność – proces modelowania, teksturowania i animowania obiektów może być czasochłonny.</li>
-                        <li>Złożoność – wymaga specjalistycznej wiedzy i umiejętności, co może stanowić barierę dla początkujących.</li>
-                        <li>Koszty produkcji – stworzenie wysokiej jakości grafiki 3D może być kosztowne, szczególnie w filmach i grach.</li>
-                        <li>Zależność od technologii – zmiany w technologii mogą wymagać dostosowania projektów, co może prowadzić do dodatkowych kosztów.</li>
-                       
-
-                        </div>
-                        <img src="Grafika 3d.jpeg" alt="Opis grafiki komputerowej">
-        <footer>
-            <p>By Hubert Banasiewicz</p>
-        </footer>
+        <div class="text-opis">
+            <p>Zalety grafiki 3D:</p>
+            <span>Realizm – umożliwia tworzenie szczegółowych i realistycznych obrazów.</span>
+            <span>Interaktywność – w grach i aplikacjach VR pozwala na pełną interakcję.</span>
+            <span>Wielofunkcyjność – znajduje zastosowanie w filmach, grach, medycynie, architekturze czy projektowaniu.</span>
+            <span>Animacja – łatwiejsze tworzenie płynnych i realistycznych animacji.</span>
+            <span>Wizualizacja danych – pomocna w przedstawianiu skomplikowanych danych.</span>
+            <div>
+                <img src="grafika_3d_przyklad2.png" alt="Zalety grafiki 3D">
+            </div>
+        </div>
+        <div class="text-opis">
+            <p>Wady grafiki 3D:</p>
+            <span>Wysokie wymagania sprzętowe – tworzenie i renderowanie grafiki 3D wymaga mocnych komputerów, co może być kosztowne.</span>
+            <span>Czasochłonność – proces modelowania, teksturowania i animowania obiektów może być czasochłonny.</span>
+            <span>Złożoność – wymaga specjalistycznej wiedzy i umiejętności, co może stanowić barierę dla początkujących.</span>
+            <span>Koszty produkcji – stworzenie wysokiej jakości grafiki 3D może być kosztowne, szczególnie w filmach i grach.</span>
+            <span>Zależność od technologii – zmiany w technologii mogą wymagać dostosowania projektów, co może prowadzić do dodatkowych kosztów.</span>
+            <div>
+                <img src="grafika_3d_przyklad3.webp" alt="Wady grafiki 3D">
+            </div>
+        </div>
+        <div class="text-opis">
+            <p>Programy do pracy z grafiką 3D:</p>
+            <span><b>Blender:</b> Darmowy i otwartoźródłowy program do modelowania, animacji i renderowania grafiki 3D.</span>
+            <span><b>Autodesk Maya:</b> Profesjonalne narzędzie do tworzenia animacji i modeli 3D.</span>
+            <span><b>3ds Max:</b> Popularny program do modelowania i renderowania grafiki 3D, używany w branży gier i filmów.</span>
+            <span><b>Cinema 4D:</b> Narzędzie do tworzenia grafiki 3D, szczególnie popularne w branży reklamowej i motion design.</span>
+            <span><b>ZBrush:</b> Program do cyfrowego rzeźbienia i modelowania 3D.</span>
+        </div>
+    </div>
+    <footer>
+        <p>By Hubert Banasiewicz</p>
+    </footer>
 </body>
 
 </html>
